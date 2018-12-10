@@ -1,0 +1,21 @@
+body
+{
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
+  color: white
+}
+img
+{
+
+}
+header
+{
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+h1
+{
+  text-shadow: #02010a 2px 0;
+  text-align: left;
+}
