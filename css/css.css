@@ -2,7 +2,7 @@ body
 {
   background-color: black;
   font-family: 'Dancing Script', cursive;
-  color: white
+  color: white;
 }
 img
 {
@@ -13,9 +13,52 @@ header
   background-color: #5b7989;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
-h1
+header h1
 {
-  text-shadow: #02010a 2px 0;
-  text-align: left;
+  text-shadow: 2px 2px 2px #02010a;
+  flex-grow: 1;
+  padding-bottom: 1.5 %;
+  font-size: 6vh;
+}
+header nav
+{
+  flex-grow: -3;
+  padding: 3%;
+  font-weight: 2vh;
+  font-size: 2vw
+}
+header nav a:link
+{
+  color: white;
+}
+header nav a:visited
+{
+  color: white;
+}
+#Inicio:link
+{
+  text-decoration: none;
+}
+/* NOTE: Imagen central */
+#imagen-principal
+{
+  width: 100%;
+  background:#82c3a6
+}
+#imagen-principal img
+{
+  padding-left: 20%
+}
+/* NOTE: imagenes secundarias */
+#imagen-secundaria
+{
+  display: flex;
+  flex-direction: column;
+}
+.redes-sociales ul li img
+{
+  width: 2%
 }
