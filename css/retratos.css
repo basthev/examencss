@@ -1,7 +1,7 @@
 body
 {
-  background:black;
-  font-family:'Dancing Script', cursive;
+  background-color: black;
+  font-family: 'Dancing Script', cursive;
   color: white;
 }
 header
@@ -32,14 +32,14 @@ header h1
   text-shadow: 2px 2px 2px #02010a;
   flex-grow: 1;
   padding-bottom: 1.5 %;
-  font-size: 7vh;
+  font-size: 6vh;
 }
 header nav
 {
-	flex-grow: -3;
-  	padding: 3%;
-  	font-weight: 2vh;
-  	font-size: 2vw;
+  flex-grow: -3;
+  padding: 3%;
+  font-weight: 2vh;
+  font-size: 2vw
 }
 header nav a:link
 {
@@ -73,30 +73,30 @@ section img
 }
 section img:nth-child(1)
 {
-  padding:2% 1% 1% 2%;
-  filter:blur(10px);
+  padding: 2% 1% 1% 2%;
+  filter: blur(10px);
 }
 section img:nth-child(2)
 {
-  padding:2% 1% 1% 1%;
+  padding: 2% 1% 1% 1%;
 }
 section img:nth-child(3)
 {
-  padding:2% 2% 1% 1%;
+  padding: 2% 2% 1% 1%;
   -webkit-filter:sepia(90%);
-  filter:sepia(90%);
+  filter: sepia(90%);
 }
 section img:nth-child(4)
 {
-  padding:1% 1% 2% 2%;
+  padding: 1% 1% 2% 2%;
 }
 section img:nth-child(5)
 {
-  padding:1% 1% 2% 1%;
+  padding: 1% 1% 2% 1%;
 }
 section img:nth-child(6)
 {
-  padding:1% 2% 2% 1%;
+  padding: 1% 2% 2% 1%;
 }
 /* NOTE: footer */
 footer
@@ -181,6 +181,7 @@ footer .caja1
  {
    padding:5%;
  }
+
  footer
  {
    max-width: 100%;
@@ -193,9 +194,4 @@ footer .caja1
    text-align: justify;
    font-size: 4vh;
    color: black;
-
-}
-footer .caja3 img
-{
-  padding: 0;
 }

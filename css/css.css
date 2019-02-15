@@ -11,6 +11,21 @@ header
   border-top-right-radius: 10px;
   display: flex;
   flex-wrap: wrap;
+  animation: mianimacion 1s;
+}
+@-webkit-keyframes mianimacion{
+  0%
+  {
+    margin-top: 150%
+  }
+  60%
+  {
+    margin-top: -5%
+  }
+  100%
+  {
+    margin-top: 0%
+  }
 }
 header h1
 {
@@ -24,7 +39,7 @@ header nav
   flex-grow: -3;
   padding: 3%;
   font-weight: 2vh;
-  font-size: 2vw
+  font-size: 2vw;
 }
 header nav a:link
 {
@@ -42,12 +57,14 @@ header nav a:visited
 #imagen-principal
 {
   width: 100%;
-  height: 30%;
-  background:#82c3a6
+  min-height: 100%;
+  background:#82c3a6;
+  padding: 3% 0 3% 0;
 }
 #imagen-principal img
 {
   display: block;
+  width: 50%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -58,19 +75,40 @@ header nav a:visited
   flex-direction: row;
   background-color: #d5c75f;
   border: 1px;
-}
-section div img
-{
-  height: 400px;
-  width: 742px;
-}
-#letra1
-{
-text-align: center;
-}
-#letra2
-{
+  justify-content: center;
+  color: black;
   text-align: center;
+  padding: 5% 10% 12% 10%;
+  font-size: 3vh;
+}
+#imagen-secundaria img
+  {
+    height: 120%;
+  }
+.Paisajes
+{
+  max-width: 50%;
+  padding-right: 3%;
+  margin-right: 7%;
+  text-decoration: underline;
+}
+.Paisajes img:hover
+{
+  transform: rotate(10deg);
+  transition: 1s;
+}
+.Retratos
+{
+  margin-left: 9%;
+  margin-right: 2.5%;
+  max-width: 50%;
+  justify-content: center;
+  text-decoration: underline;
+}
+.Retratos img:hover
+{
+  transform: translate( 20px,-5px);
+  transition: 1s;
 }
 /* NOTE: footer */
 footer
@@ -78,13 +116,81 @@ footer
   background-color: #C6d5c5;
   display: flex;
 }
-div [class*="caja"]{
-  min-height: 200px;
+div [class*="caja"]
+{
+  background-color: #C6d5c5;
+  display: flex;
+}
+footer div{
+  min-height: 25%;
   flex: 1 2 40%;
   font-size: 3.5vh;
   color: black;
+  text-align: justify;
 }
-.caja3 ul li img
+footer .caja3 img
 {
-  width: 2%
+  filter: none;
 }
+.footer-image
+{
+  float: left;
+  width: 10%;
+}
+footer .caja1
+{
+  padding-left: 1%;
+}
+@media (max-width:900px){
+  body
+  {
+    min-width: 100%;
+  }
+  header
+  {
+  text-align: center;
+  justify-content: center;
+  min-width: 100%;
+ }
+ header h1
+ {
+   font-size: 6vh;
+ }
+ header nav
+ {
+   font-size: 5vh;
+   align-items: center;
+ }
+ #imagen-principal
+ {
+   width: 99%;
+ }
+ #imagen-principal img
+ {
+  min-width: 99%;
+ }
+ #imagen-secundaria
+ {
+   flex-direction: column;
+   padding: 3% 0% 0% 0%;
+   width: 99%;
+ }
+ #imagen-secundaria img
+ {
+   width: 90%;
+ }
+ footer
+ {
+   max-width: 100%;
+   flex-direction: column;
+   width: 99%
+ }
+ footer div
+ {
+   max-width: 100%;
+   align-content:center;
+   text-align: justify;
+   font-size: 4vh;
+   color: black;
+}
+ }
